@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<htm>
+<head>
+<style>
+div{
+	width:300px;
+	height:50px;
+	position:relative;
+	background-color:red;
+	font-weight:900;
+	animation:mymove 5s infinite;
+	}
+	}
+<!---@-webkit-keyframes  mymove {
+	from {background-color:red; }
+	to{background-color:yellow; }
+	}
+@keyframes example{
+	0% {background-color:red;left:0px; top:0px;}
+	25%{background-color:yellow; left:200px; top:200px;}
+	50%{background-color:blue; left:200px; top:200px;}
+	75%{background-color:green; left:0px; top:200px:}
+	100%{background-color:red; left:0px; top:0px;}
+	}-->
+@keyframes mymove{
+	from{left:0px;}
+	to{left:300px}
+	}
+#div1{animation-timing-function:linear;}
+#div2{animation-timing-function: ease;}
+#div3{animation-timing-function:ease-in;}
+#div4{animation-timing-function:ease-out;}
+#div5{animation-timing-function:ease-in-out;}
+</style>
+</head>
+<body>
+
+<p><b>NOTE:</b> this example does not work with internet explorer</p>
+<div> YUDATHADEI</div>
+
+<p><b>NOTE:</b> when animation is finished it changes back to origin style</p>
+<div id="div1">linear</div>
+<!---<div id="div2">ease</div>
+<div id="div3">ease-in</div>
+<div id="div4">ease-out</div>
+<div id="div5">ease-in-out</div>-->
+
+</body>
